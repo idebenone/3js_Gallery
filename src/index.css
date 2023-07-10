@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap");
+
+::-webkit-scrollbar {
+    width: 6px;
+
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(41, 41, 41, 0.37)
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(80, 80, 80);
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Agdasima", sans-serif !important;
+    background-color: black;
+}
+
+.canvas-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.abs {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.abs h1,
+.abs p {
+    min-width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.abs h1 {
+    color: #dbdbdb;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.abs p {
+    color: #a0a0a0;
+    font-size: 1.25rem;
+    margin-top: 4.5rem;
+    text-align: center;
+}
+
+.comp-name {
+    margin-top: 11rem;
+}
+
+.worlds {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.world-name {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.world-name h1 {
+    position: absolute;
+    bottom: 100px;
+}
+
+.world-name h4 {
+    position: absolute;
+    top: 100px;
+}
+
+.hide {
+    opacity: 0;
+    transition: opacity 5ms ease-in-out;
+}
+
+.show {
+    opacity: 1;
+    transition: opacity 5ms ease-in-out;
+}
+
+@media screen and (max-width: 480px) {
+    .abs h1 {
+        font-size: 1.3rem;
+    }
+
+    .abs p {
+        font-size: 0.8rem;
+        margin-top: 2.3rem;
+    }
+
+    .comp-name {
+        margin-top: 7rem;
+    }
+}
