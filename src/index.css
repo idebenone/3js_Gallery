@@ -22,7 +22,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Agdasima", sans-serif !important;
+    font-family: 'Agdasima', sans-serif;
     background-color: black;
 }
 
@@ -63,37 +63,6 @@ body {
     margin-top: 11rem;
 }
 
-.worlds {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-}
-
-.world-name {
-    display: flex;
-    justify-content: center;
-    color: white;
-}
-
-.world-name h1 {
-    position: absolute;
-    bottom: 100px;
-}
-
-.world-name h4 {
-    position: absolute;
-    top: 100px;
-}
-
-.hide {
-    opacity: 0;
-    transition: opacity 5ms ease-in-out;
-}
-
-.show {
-    opacity: 1;
-    transition: opacity 5ms ease-in-out;
-}
 
 @media screen and (max-width: 480px) {
     .abs h1 {
